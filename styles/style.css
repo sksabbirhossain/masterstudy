@@ -31,6 +31,21 @@ button,
   outline: none !important;
   box-shadow: none !important;
 }
+.main-btn {
+  color: var(--white-color);
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  transition: all linear .4s ease-in-out;
+}
+.main-btn:hover {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  transition: all linear .4s ;
+}
 /* common css end */
 
 /* header section start */
@@ -80,3 +95,20 @@ button,
   background-color: var(--primary-color);
 }
 /* header section end */
+
+/* banner sections start */
+.banner_wrapper .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.banner_wrapper .carousel-item .carousel-caption h1{
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1;
+}
+.banner_wrapper .carousel-item .carousel-caption p{
+  font-size: 16px;
+  padding: 10px 0;
+}
+/* banner section end */
