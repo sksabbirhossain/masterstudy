@@ -9,17 +9,29 @@
 }
 :root {
   --primary-color: #289bde;
+  --border-color: #e7e2e2;
 
   /* text color */
   --black-color: #000000;
   --white-color: #ffffff;
-  --gray-color: #979696;
+  --gray-color: #8f8f8f;
+  --semi-gray: #f3f3f3;
 }
 a {
   text-decoration: none;
 }
 section {
   padding: 50px 0;
+}
+p {
+  color: var(--gray-color);
+  margin: 0;
+}
+span {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 5px 0;
 }
 input:hover,
 input:focus,
@@ -38,13 +50,13 @@ button,
   font-weight: 600;
   background-color: var(--primary-color);
   border-radius: 5px;
-  transition: all linear .4s ease-in-out;
+  transition: all linear 0.4s ease-in-out;
 }
 .main-btn:hover {
   color: var(--primary-color);
   background-color: var(--white-color);
   border: 1px solid var(--primary-color);
-  transition: all linear .4s ;
+  transition: all linear 0.4s;
 }
 /* common css end */
 
@@ -102,13 +114,26 @@ button,
   object-fit: cover;
   border-radius: 10px;
 }
-.banner_wrapper .carousel-item .carousel-caption h1{
+.banner_wrapper .carousel-item .carousel-caption h1 {
   font-size: 50px;
   font-weight: 600;
   line-height: 1;
 }
-.banner_wrapper .carousel-item .carousel-caption p{
+.banner_wrapper .carousel-item .carousel-caption p {
   font-size: 16px;
   padding: 10px 0;
 }
 /* banner section end */
+
+/* course section start */
+.courses_wrapper .course_items {
+  background-color: var(--semi-gray);
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+.courses_wrapper .course_items .course-text {
+  display: inline-block;
+  margin: 10px 10px;
+}
+/* course section end */
