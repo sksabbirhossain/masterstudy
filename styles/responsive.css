@@ -2,7 +2,15 @@
   section {
     padding: 30px 0;
   }
- 
+
+ /* explore section start */
+.explore_wrapper .explore-text h1{
+  font-size: 30px;
+  font-weight: 500;
+
+}
+
+/* explore section end */
 }
 
 @media (max-width: 767px) {
